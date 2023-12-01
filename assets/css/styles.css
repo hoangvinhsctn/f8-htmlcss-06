@@ -19,6 +19,21 @@ textarea {
     font-family: inherit;
 }
 
+/* .inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    min-height: 100px;
+    margin-bottom: 30px;
+
+    background: #ccc;
+
+    font-size: 30px;
+    font-weight: 600;
+} */
+
 /* ================Common================ */
 .content {
     width: 1330px;
@@ -27,6 +42,23 @@ textarea {
 
 a {
     text-decoration: none;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 62px;
+    background: #5d3bee;
+    color: #fdfdfd;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.67; /* 166.667% */
+}
+
+.btn:hover {
+    opacity: 0.9;
 }
 
 /* ================Header================ */
@@ -96,4 +128,94 @@ a {
 
 .navbar__link:hover {
     text-decoration: underline;
+}
+
+/* ===================Hero==================== */
+.hero {
+    background: #fbfaff;
+}
+
+.hero__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero__left-img-wrap {
+    width: 514px;
+    height: 705px;
+}
+
+.hero__left-img {
+    width: 100%;
+    height: 100%;
+}
+
+.hero__right {
+    width: 500px;
+}
+
+.hero__heading {
+    color: #080415;
+    font-size: 8rem;
+    font-weight: 500;
+    line-height: 0.95; /* 95% */
+}
+
+.hero__desc {
+    margin: 20px 0 50px;
+    color: #51586a;
+    font-size: 1.8rem;
+    width: 370px;
+    font-weight: 400;
+    line-height: 1.67; /* 166.667% */
+}
+
+.hero__cta-link {
+    margin-left: 30px;
+    position: relative;
+    color: #080415;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.67; /* 166.667% */
+}
+
+.hero__cta-link::after {
+    position: absolute;
+    display: inline-block;
+    bottom: 3px;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #080415;
+}
+
+.hero__row {
+    margin-top: 104px;
+    display: inline-flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.hero__text {
+    color: #51586a;
+    font-weight: 500;
+    line-height: 1.88; /* 187.5% */
+}
+
+.social__list {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.social__item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgba(8, 4, 21, 0.1);
 }
