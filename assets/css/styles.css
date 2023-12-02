@@ -888,3 +888,51 @@ a {
     height: 529px;
     object-fit: cover;
 }
+
+/* ==================Cta================ */
+.cta {
+    position: relative;
+    width: 1330px;
+    margin: 140px auto 0;
+    padding: 60px 0;
+    background: #fbfaff;
+}
+
+.cta__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.cta__heading,
+.cta__desc {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.cta__btn {
+    margin-top: 60px;
+}
+
+.cta__decor-left,
+.cta__decor-mid,
+.cta__decor-right {
+    position: absolute;
+}
+
+.cta__decor-left {
+    bottom: 0;
+    left: 0;
+}
+
+.cta__decor-mid {
+    left: 50%;
+    translate: -50%;
+    top: 0;
+}
+
+.cta__decor-right {
+    top: 0;
+    right: 0;
+}
