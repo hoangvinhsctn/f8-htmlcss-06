@@ -104,8 +104,8 @@
         <script src="./main.js"></script>
     </head>
     <body>
-        <!-- Header -->
-        <header class="header">
+        <!-- PC Header -->
+        <header class="header show-on-pc">
             <div class="content">
                 <div class="body">
                     <div class="contact">
@@ -126,7 +126,7 @@
                         class="emoji"
                     />
                     <nav class="navbar">
-                        <ul class="navbar__list">
+                        <ul class="navbar__list" id="pc-nav">
                             <li class="navbar__item">
                                 <a href="#!" class="navbar__link">Projects</a>
                             </li>
@@ -141,6 +141,56 @@
                             </li>
                         </ul>
                     </nav>
+                </div>
+            </div>
+        </header>
+
+        <!-- Tablet/ Mobile Header -->
+        <header class="header hide-on-pc">
+            <div class="container">
+                <div class="body">
+                    <img
+                        src="./assets/img/emoji-mobile.png"
+                        alt="Emoji"
+                        class="emoji"
+                    />
+
+                    <div class="contact">
+                        <div class="logo">
+                            <img
+                                src="./assets/img/logo.svg"
+                                alt="Logo"
+                                class="logo-icon"
+                            />
+                        </div>
+
+                        <label for="menu-checkbox" class="toggle-menu"></label>
+                    </div>
+                </div>
+
+                <input
+                    type="checkbox"
+                    name=""
+                    id="menu-checkbox"
+                    class="menu-checkbox"
+                    hidden
+                />
+
+                <label for="menu-checkbox" class="menu-overlay"></label>
+                <!-- Menu content -->
+                <div class="menu-drawer">
+                    <!-- Logo -->
+                    <a href="#"><img src="./assets/img/logo.svg" alt="" /></a>
+
+                    <!-- Navigation -->
+                    <ul id="mobile-nav"></ul>
+
+                    <script>
+                        const pcNav = document.querySelector("#pc-nav");
+                        const mobileNav = document.querySelector("#mobile-nav");
+
+                        mobileNav.innerHTML = pcNav.innerHTML;
+                    </script>
                 </div>
             </div>
         </header>
