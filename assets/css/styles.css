@@ -21,7 +21,7 @@ textarea {
 
 /* ================Common================ */
 .content {
-    width: 1330px;
+    max-width: 1330px;
     margin: 0 auto;
 }
 
@@ -249,7 +249,7 @@ a {
 
 .hero__decor-right {
     bottom: 0;
-    right: -173px;
+    right: -95px;
 }
 
 /*================Company=================*/
@@ -892,7 +892,7 @@ a {
 /* ==================Cta================ */
 .cta {
     position: relative;
-    width: 1330px;
+    max-width: 1330px;
     margin: 140px auto 0;
     padding: 60px 0;
     background: #fbfaff;
@@ -940,11 +940,11 @@ a {
 /* ====================Footer=============== */
 .footer {
     margin: 50px auto 0;
-    width: 1429px;
+    max-width: 1429px;
 }
 
 .footer-top__inner {
-    width: 1330px;
+    max-width: 1330px;
     margin: 0 auto;
 }
 

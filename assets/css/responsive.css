@@ -3,6 +3,11 @@
     .hide-on-pc {
         display: none;
     }
+
+    .header {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
 }
 
 /* Tablet and Mobile */
@@ -119,6 +124,16 @@
     .hero__decor-right {
         display: none;
     }
+
+    .company__inner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .company__list {
+        margin-top: 50px;
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 /* Tablet */
@@ -199,5 +214,35 @@
     .hero__decor-left {
         width: 543.71px;
         height: 402.15px;
+    }
+
+    .company__review {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 2.8rem;
+        line-height: 1.21;
+        width: 169px;
+        text-align: center;
+    }
+
+    .company {
+        margin-top: 125px;
+        padding: 0 27px;
+    }
+
+    .company__inner {
+        align-items: initial;
+    }
+
+    .company__review::before {
+        top: 0;
+        left: 50%;
+        translate: -50%;
+        width: 48px;
+    }
+
+    .company__list {
+        column-gap: 0;
+        width: 100%;
     }
 }
