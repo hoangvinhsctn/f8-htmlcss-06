@@ -595,7 +595,7 @@ a {
 .testimonal {
     position: relative;
     background: #fbfaff;
-    padding: 150px 0;
+    padding: 150px 0 74px;
 }
 
 .testimonal__inner {
