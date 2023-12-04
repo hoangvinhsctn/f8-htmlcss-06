@@ -102,6 +102,12 @@
 
         <!-- Interactive -->
         <script src="./main.js"></script>
+
+        <!-- Animation -->
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
     </head>
     <body>
         <!-- PC Header -->
@@ -110,13 +116,17 @@
                 <div class="body">
                     <div class="contact">
                         <div class="logo">
-                            <img
-                                src="./assets/img/logo.svg"
-                                alt="Logo"
-                                class="logo-icon"
-                            />
+                            <a href="./index.html">
+                                <img
+                                    src="./assets/img/logo.svg"
+                                    alt="Logo"
+                                    class="logo-icon"
+                                />
+                            </a>
                         </div>
-                        <a href="#!" class="contact__email"
+                        <a
+                            href="mailto:@arif.interactive"
+                            class="contact__email"
                             >hi@arif.interactive</a
                         >
                     </div>
@@ -157,11 +167,13 @@
 
                     <div class="contact">
                         <div class="logo">
-                            <img
-                                src="./assets/img/logo.svg"
-                                alt="Logo"
-                                class="logo-icon"
-                            />
+                            <a href="./index.html">
+                                <img
+                                    src="./assets/img/logo.svg"
+                                    alt="Logo"
+                                    class="logo-icon"
+                                />
+                            </a>
                         </div>
 
                         <label for="menu-checkbox" class="toggle-menu"></label>
@@ -304,8 +316,10 @@
             <section class="company">
                 <div class="container">
                     <div class="company__inner">
-                        <h2 class="company__review">Meet my recent clients</h2>
-                        <div class="company__list">
+                        <h2 class="company__review" data-aos="fade-left">
+                            Meet my recent clients
+                        </h2>
+                        <div class="company__list" data-aos="fade-down">
                             <div class="company__item">
                                 <div class="company__item-logo-wrap">
                                     <img
@@ -410,17 +424,24 @@
             <!-- Service -->
             <section class="service">
                 <div class="container">
-                    <h2 class="section-heading service__heading">
+                    <h2
+                        class="section-heading service__heading"
+                        data-aos="fade-down"
+                    >
                         Specialities
                     </h2>
-                    <p class="section-desc service__desc">
+                    <p class="section-desc service__desc" data-aos="fade-right">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         In urna, non nisl tincidunt ut elementum turpis.
                     </p>
                     <section class="service__list">
                         <div class="row row-cols-lg-3 row-cols-md-1 row-cols-1">
                             <!-- Item 1 -->
-                            <div class="col">
+                            <div
+                                class="col"
+                                data-aos="zoom-in-up"
+                                data-aos-duration="1000"
+                            >
                                 <div class="service__item">
                                     <div class="service__item-img-wrap">
                                         <img
@@ -441,7 +462,11 @@
                             </div>
 
                             <!-- Item 2 -->
-                            <div class="col">
+                            <div
+                                class="col"
+                                data-aos="zoom-in-up"
+                                data-aos-duration="1000"
+                            >
                                 <div class="service__item">
                                     <div class="service__item-img-wrap">
                                         <img
@@ -462,7 +487,11 @@
                             </div>
 
                             <!-- Item 3 -->
-                            <div class="col">
+                            <div
+                                class="col"
+                                data-aos="zoom-in-up"
+                                data-aos-duration="1000"
+                            >
                                 <div class="service__item">
                                     <div class="service__item-img-wrap">
                                         <img
@@ -495,7 +524,7 @@
             <!-- Works -->
             <section class="works">
                 <div class="container">
-                    <div class="work-top">
+                    <div class="work-top" data-aos="zoom-in-down">
                         <h2 class="section-heading work-top__heading">
                             Take a look at
 
@@ -511,7 +540,7 @@
                     </div>
                     <section class="work__list">
                         <!-- Item 1 -->
-                        <section class="work__item">
+                        <section class="work__item" data-aos="flip-left">
                             <div class="work__item-info">
                                 <h3 class="work__item-title">Wally Website</h3>
                                 <p class="work__item-desc">
@@ -533,7 +562,7 @@
                         </section>
 
                         <!-- Item 2 -->
-                        <section class="work__item">
+                        <section class="work__item" data-aos="flip-left">
                             <div class="work__item-info">
                                 <h3 class="work__item-title">Banking App</h3>
                                 <p class="work__item-desc">
@@ -555,7 +584,7 @@
                         </section>
 
                         <!-- Item 3 -->
-                        <section class="work__item">
+                        <section class="work__item" data-aos="flip-left">
                             <div class="work__item-info">
                                 <h3 class="work__item-title">Web App</h3>
                                 <p class="work__item-desc">
@@ -577,7 +606,7 @@
                         </section>
 
                         <!-- Item 4 -->
-                        <section class="work__item">
+                        <section class="work__item" data-aos="flip-left">
                             <div class="work__item-info">
                                 <h3 class="work__item-title">Oculus Website</h3>
                                 <p class="work__item-desc">
@@ -598,7 +627,7 @@
                             </div>
                         </section>
                     </section>
-                    <div class="work__cta-btn-wrap">
+                    <div class="work__cta-btn-wrap" data-aos="fade-up">
                         <a href="#!" class="btn work__cta-btn">All Projects</a>
                     </div>
                 </div>
@@ -607,7 +636,7 @@
             <!-- About -->
             <section class="about">
                 <div class="container">
-                    <div class="about-top">
+                    <div class="about-top" data-aos="fade-down">
                         <div class="about-top__greeting">
                             <span class="about-top__greeting-text"
                                 >Hey,,,,It’s Arif</span
@@ -628,7 +657,10 @@
                         </p>
                     </div>
                     <div class="about-highlight__list">
-                        <div class="about-highlight__item">
+                        <div
+                            class="about-highlight__item"
+                            data-aos="flip-right"
+                        >
                             <span class="about-highlight__item-number"
                                 >08+</span
                             >
@@ -636,7 +668,10 @@
                                 >Years Experience</span
                             >
                         </div>
-                        <div class="about-highlight__item">
+                        <div
+                            class="about-highlight__item"
+                            data-aos="flip-right"
+                        >
                             <span class="about-highlight__item-number"
                                 >21+</span
                             >
@@ -644,7 +679,10 @@
                                 >Features & Awards</span
                             >
                         </div>
-                        <div class="about-highlight__item">
+                        <div
+                            class="about-highlight__item"
+                            data-aos="flip-right"
+                        >
                             <span class="about-highlight__item-number"
                                 >97%</span
                             >
@@ -653,10 +691,10 @@
                             >
                         </div>
                     </div>
-                    <div class="about__intro">
+                    <div class="about__intro" data-aos="flip-up">
                         <video
                             controls
-                            src="./video/about-video.mp4"
+                            src="./assets/video/about-video.mp4"
                             id="myVideo"
                             class="about__intro-video"
                         ></video>
@@ -678,15 +716,25 @@
             <section class="testimonal">
                 <div class="container">
                     <div class="testimonal__inner">
-                        <h2 class="section-heading testimonal__heading">
+                        <h2
+                            class="section-heading testimonal__heading"
+                            data-aos="fade-down"
+                        >
                             What people says
                         </h2>
-                        <p class="section-desc testimonal__desc">
+                        <p
+                            class="section-desc testimonal__desc"
+                            data-aos="fade-down"
+                        >
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit. In urna, non nisl tincidunt ut elementum
                             turpis.
                         </p>
-                        <div class="testimonal-card__list">
+                        <div
+                            class="testimonal-card__list"
+                            data-aos="zoom-in-left"
+                            data-aos-duration="1500"
+                        >
                             <!-- Item 1 -->
                             <div class="testimonal-card__item">
                                 <p class="testimonal-card__desc">
@@ -858,12 +906,15 @@
             <section class="faq">
                 <div class="container">
                     <div class="faq__inner">
-                        <h2 class="section-heading faq__heading">
+                        <h2
+                            class="section-heading faq__heading"
+                            data-aos="fade-right"
+                        >
                             A few questions clients normally ask me
                         </h2>
                         <section class="faq-list">
                             <!-- Item 1 -->
-                            <div class="faq-item">
+                            <div class="faq-item" data-aos="fade-left">
                                 <input
                                     type="radio"
                                     id="faq-item__open-01"
@@ -888,7 +939,11 @@
                             </div>
 
                             <!-- Item 2 -->
-                            <div class="faq-item">
+                            <div
+                                class="faq-item"
+                                data-aos="fade-left"
+                                data-aos-duration="1000"
+                            >
                                 <input
                                     type="radio"
                                     id="faq-item__open-02"
@@ -913,7 +968,11 @@
                             </div>
 
                             <!-- Item 3 -->
-                            <div class="faq-item">
+                            <div
+                                class="faq-item"
+                                data-aos="fade-left"
+                                data-aos-duration="1200"
+                            >
                                 <input
                                     type="radio"
                                     id="faq-item__open-03"
@@ -938,7 +997,11 @@
                             </div>
 
                             <!-- Item 4 -->
-                            <div class="faq-item">
+                            <div
+                                class="faq-item"
+                                data-aos="fade-left"
+                                data-aos-duration="1400"
+                            >
                                 <input
                                     type="radio"
                                     id="faq-item__open-04"
@@ -963,7 +1026,11 @@
                             </div>
 
                             <!-- Item 5 -->
-                            <div class="faq-item">
+                            <div
+                                class="faq-item"
+                                data-aos="fade-left"
+                                data-aos-duration="1500"
+                            >
                                 <input
                                     type="radio"
                                     id="faq-item__open-05"
@@ -994,19 +1061,29 @@
             <!-- Gallery -->
             <section class="gallery">
                 <div class="container">
-                    <h2 class="section-heading gallery__heading">
+                    <h2
+                        class="section-heading gallery__heading"
+                        data-aos="fade-down"
+                    >
                         My atmosphere
                     </h2>
-                    <p class="section-desc gallery__desc">
+                    <p class="section-desc gallery__desc" data-aos="fade-left">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         In urna, non nisl tincidunt ut elementum turpis.
                     </p>
-                    <a href="mailto:@interaction_arif" class="gallery__link"
+                    <a
+                        href="mailto:@interaction_arif"
+                        class="gallery__link"
+                        data-aos="fade-right"
                         >@interaction_arif</a
                     >
                     <ul class="gallery-list">
                         <!-- Item 1 -->
-                        <li class="gallery-item">
+                        <li
+                            class="gallery-item"
+                            data-aos="zoom-in"
+                            data-aos-duration="1000"
+                        >
                             <a href="#!">
                                 <img
                                     src="./assets/img/gallery-01.jpg"
@@ -1017,7 +1094,11 @@
                         </li>
 
                         <!-- Item 2 -->
-                        <li class="gallery-item">
+                        <li
+                            class="gallery-item"
+                            data-aos="zoom-in"
+                            data-aos-duration="1200"
+                        >
                             <a href="#!">
                                 <img
                                     src="./assets/img/gallery-02.jpg"
@@ -1028,7 +1109,11 @@
                         </li>
 
                         <!-- Item 3 -->
-                        <li class="gallery-item">
+                        <li
+                            class="gallery-item"
+                            data-aos="zoom-in"
+                            data-aos-duration="1400"
+                        >
                             <a href="#!">
                                 <img
                                     src="./assets/img/gallery-03.jpg"
@@ -1050,7 +1135,13 @@
 
             <!-- Cta -->
             <section class="cta">
-                <div class="cta__inner">
+                <div
+                    class="cta__inner"
+                    data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine"
+                    data-aos-duration="1200"
+                >
                     <img
                         src="./assets/img/cta-emoji.png"
                         alt=""
@@ -1088,11 +1179,13 @@
                 <div class="body footer-top__inner">
                     <div class="contact">
                         <div class="logo">
-                            <img
-                                src="./assets/img/logo.svg"
-                                alt="Logo"
-                                class="logo-icon"
-                            />
+                            <a href="./index.html">
+                                <img
+                                    src="./assets/img/logo.svg"
+                                    alt="Logo"
+                                    class="logo-icon"
+                                />
+                            </a>
                         </div>
                         <a
                             href="#!"
@@ -1141,5 +1234,10 @@
                 </div>
             </div>
         </footer>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>
