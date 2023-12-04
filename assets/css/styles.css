@@ -144,6 +144,7 @@ a {
 
 /* ===================Hero==================== */
 .hero {
+    position: relative;
     background: #fbfaff;
 }
 
@@ -239,17 +240,17 @@ a {
 .hero__decor-left,
 .hero__decor-right {
     position: absolute;
+    z-index: 0;
 }
 
 .hero__decor-left {
     bottom: 0;
-    z-index: 0;
     left: -192px;
 }
 
 .hero__decor-right {
     bottom: 0;
-    right: -95px;
+    right: 0;
 }
 
 /*================Company=================*/
@@ -351,15 +352,11 @@ a {
 
 .service__desc {
     margin: 20px auto 0;
-    width: 534px;
+    max-width: 534px;
 }
 
 .service__list {
     margin-top: 60px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 30px;
-    align-items: center;
 }
 
 .service__item {
