@@ -8,6 +8,17 @@
         padding-left: 24px;
         padding-right: 24px;
     }
+
+    .testimonal-card__list {
+        column-gap: 100px;
+    }
+
+    .testimonal-card__item {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 /* Tablet and Mobile */
