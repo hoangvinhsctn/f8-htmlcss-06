@@ -50,23 +50,11 @@ a {
     justify-content: center;
     min-width: 170px;
     --height: 62px;
-    color: #fdfdfd;
+    background: #5d3bee;
+    color: #fff;
     font-size: 1.8rem;
     font-weight: 700;
     line-height: var(--height); /* 166.667% */
-}
-
-.btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 170px;
-    height: 62px;
-    background: #5d3bee;
-    color: #fdfdfd;
-    font-size: 1.8rem;
-    font-weight: 700;
-    line-height: 1.67; /* 166.667% */
 }
 
 .btn:hover {
