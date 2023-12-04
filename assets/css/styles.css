@@ -725,11 +725,11 @@ a {
 }
 
 .faq__inner {
-    width: 1010px;
+    max-width: 1010px;
 }
 
 .faq__heading {
-    width: 575px;
+    max-width: 575px;
 }
 
 .faq-list {
