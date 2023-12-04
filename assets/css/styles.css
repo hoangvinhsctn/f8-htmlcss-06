@@ -863,9 +863,12 @@ a {
 
 .gallery-list {
     margin-top: 70px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
     column-gap: 30px;
+}
+
+.gallery-item {
+    flex: 1 0;
 }
 
 .gallery-item__img {

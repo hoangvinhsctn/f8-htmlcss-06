@@ -172,6 +172,16 @@
         padding: 0 20px;
         overflow: hidden;
     }
+
+    .gallery-item__img {
+        width: 352px;
+        height: 503px;
+    }
+
+    .gallery__dots {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 /* Tablet */
@@ -184,6 +194,10 @@
 
     .testimonal-card__list {
         column-gap: 50px;
+    }
+
+    .gallery-list {
+        overflow: hidden;
     }
 }
 
@@ -486,5 +500,27 @@
     .faq-item__check-label::after {
         width: 9px;
         height: 2px;
+    }
+
+    .gallery__heading {
+        font-size: 3.6rem;
+        line-height: 1.17;
+    }
+
+    .gallery__desc {
+        width: 350px;
+        font-size: 1.6rem;
+        line-height: 1.63;
+    }
+
+    .gallery__link {
+        font-size: 2rem;
+        line-height: 2;
+    }
+
+    .gallery-list {
+        overflow: hidden;
+        column-gap: 100px;
+        justify-content: center;
     }
 }
