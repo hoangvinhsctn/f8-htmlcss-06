@@ -835,7 +835,7 @@ a {
 .faq-item__desc {
     position: absolute;
     visibility: hidden;
-    width: 487px;
+    max-width: 487px;
     opacity: 0;
 }
 
@@ -965,6 +965,7 @@ a {
 .footer-top__inner {
     max-width: 1330px;
     margin: 0 auto;
+    padding-right: 21.5px;
 }
 
 .footer-bottom__break {
