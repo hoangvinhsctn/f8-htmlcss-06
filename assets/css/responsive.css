@@ -40,7 +40,7 @@
 
     .header-body {
         border-bottom: 1px solid #d6d3e2;
-        padding: 0 13px 16px;
+        padding: 0 20px 16px;
     }
 
     .menu-overlay {
@@ -55,7 +55,7 @@
 
     .menu-drawer {
         position: fixed;
-        inset: 0 60% 0 0;
+        inset: 0 40% 0 0;
         background: #fff;
         z-index: 3;
         transform: translateX(-100%);
@@ -269,10 +269,6 @@
         height: 44px;
     }
 
-    .menu-drawer {
-        inset: 0 60% 0 0;
-    }
-
     .hero__heading {
         width: 260px;
         font-size: 4.2rem;
@@ -326,8 +322,9 @@
     }
 
     .hero__decor-left {
-        width: 543.71px;
-        height: 402.15px;
+        max-width: 100%;
+        max-height: 402.15px;
+        object-fit: cover;
     }
 
     .company__review {
